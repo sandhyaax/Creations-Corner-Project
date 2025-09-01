@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - Creations Corner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f8e9e6, #f3d5c0);
+            color: #2f3640;
+        }
+        header {
+            background: linear-gradient(to right, #d35400, #e98b39);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-logo {
+            text-decoration: none;
+            color: #fff;
+        }
+        .logo-text {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-list li {
+            margin: 0 15px;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1em;
+            transition: opacity 0.3s;
+        }
+        .nav-list a:hover, .nav-list a.active {
+            opacity: 0.7;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: #ffe8d6;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 1.15em;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .news-card {
+            background: #fdf2e9;
+            border: 2px solid #e98b39;
+            border-radius: 12px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-card img {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            
+        }
+
+        .news-card p {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2f3640;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+        footer span {
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 20px;
+            }
+            .news-card {
+                width: 100%
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Creations Corner</h2>
+            </a>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Latest News</h1>
+        <p>
+            Welcome to the latest news section of Creations Corner. Here, we highlight innovative projects, share 
+            updates, and provide insights into fascinating concepts. Today, we dive into the fundamentals of Grashof's Law.
+        </p>
+        <p>
+            Grashof's Law is a principle in kinematics that determines whether a four-bar linkage will act as a crank, 
+            rocker, or double rocker. It states that for a four-bar linkage, the sum of the shortest and longest link 
+            lengths should be less than or equal to the sum of the remaining two link lengths for the linkage to have a 
+            full rotation of one link.
+        </p>
+        <section class="news-section">
+            <div class="news-card">
+                <img src="./grashffdiag.png" alt="Grashof's Law Diagram">
+                <p>Illustration of Grashof's Law in a four-bar linkage system.</p>
+            </div>
+            <div class="news-card">
+                <img src="./mechgrashoff.png" alt="Mechanism Example">
+                <p>Example of a crank-rocker mechanism explained by Grashof's Law.</p>
+            </div>
+            <div class="news-card">
+                <img src="kineticdiag.png" alt="Kinematic Motion">
+                <p>Kinematic motion analysis enabled by Grashof's Law.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Creations Corner. <span>All Rights Reserved.</span>
+    </footer>
+</body>
+</html>
